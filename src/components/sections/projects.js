@@ -41,6 +41,12 @@ const Projects = () => {
 
 const SectionWrapper = styled.section`
   margin-bottom: ${rhythm(5)};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 export default Projects;

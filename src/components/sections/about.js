@@ -70,13 +70,14 @@ const ProfilePicture = styled(Image)`
 `;
 
 const AboutText = styled.div`
+  color: ${({ theme }) => theme.gray};
+  margin-left: ${rhythm(1)};
+  max-width: 700px;
+
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
     text-align: center;
+    margin: ${rhythm(1)} 0;
   }
-
-  color: ${({ theme }) => theme.gray};
-  margin: ${rhythm(1)};
-  max-width: 700px;
 `;
 
 export default About;

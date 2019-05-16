@@ -51,8 +51,6 @@ const Info = styled.div`
   font-size: 0.9rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    flex-direction: row;
-    justify-content: space-between;
     margin-bottom: ${rhythm(1)};
   }
 `;

@@ -37,19 +37,14 @@ const Hero = () => {
 };
 
 const SectionWrapper = styled.section`
-  height: ${rhythm(25)};
+  margin-bottom: ${rhythm(10)};
 
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    height: ${rhythm(30)};
+    margin-bottom: ${rhythm(5)};
   }
 `;
 
 const Container = styled.div`
-  @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    margin: 0 auto;
-    text-align: center;
-  }
-
   padding-top: ${rhythm(6)};
   max-width: 700px;
 `;
@@ -57,6 +52,10 @@ const Container = styled.div`
 const HeroText = styled.h1`
   ${scale(1.5)};
   margin-bottom: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    ${scale(1)};
+  }
 `;
 
 const SocialLink = styled.a`
@@ -67,6 +66,11 @@ const SocialLink = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    margin: ${rhythm(0.5)};
+    ${scale(1)};
   }
 `;
 

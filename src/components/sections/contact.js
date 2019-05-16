@@ -44,7 +44,6 @@ const Link = styled.a`
   transition: color 0.5s;
 
   &:hover {
-    text-decoration: underline;
     color: ${({ theme }) => theme.primary};
   }
 `;
