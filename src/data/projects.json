@@ -1,0 +1,9 @@
+[
+  {
+    "title": "CodePen Projects",
+    "url": "https://codepen.io/adelrodriguez/",
+    "description": "Multiple pens created for FreeCodeCamp projects list.",
+    "image": "../images/projects/codepen-projects.png",
+    "skills": ["HTML", "CSS", "JavaScript", "jQuery"]
+  }
+]

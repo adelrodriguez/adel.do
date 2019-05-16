@@ -1,0 +1,18 @@
+[
+  {
+    "school": "Tecnológico de Monterrey",
+    "degree": "Master's Degree",
+    "field": "Innovation for Business Development",
+    "details": "Concentration on Innovation Strategy by the Stanford Center for Professional Development",
+    "startYear": "2016",
+    "endYear": "2019"
+  },
+  {
+    "school": "Instituto Tecnológico de Santo Domingo",
+    "degree": "Bachelor's Degree",
+    "field": "Mechatronic Engineering",
+    "details": "Graduated Cum Laude. Minor in Innovation and Entrepreneurship",
+    "startYear": "2010",
+    "endYear": "2014"
+  }
+]

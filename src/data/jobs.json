@@ -1,0 +1,24 @@
+[
+  {
+    "company": "Genome Digital",
+    "position": "Front End Engineer",
+    "startDate": "July 2018",
+    "endDate": null,
+    "achievements": [
+      "Develop functional, accessible and aesthetically pleasing user interfaces for the company's products and clients, while maintaining high standards of performance, quality and security.",
+      "Serve as lead in multiple projects, guiding the front end design and development to ensure highly-scalable and maintainable applications."
+    ],
+    "skills": ["React", "Redux", "GraphQL", "Remote Work"]
+  },
+  {
+    "company": "OnClick Studio",
+    "position": "Full Stack Developer",
+    "startDate": "November 2017",
+    "endDate": "May 2018",
+    "achievements": [
+      "Developed a single page applications and APIs for client’s projects using MERN stack.",
+      "Deployed JSON APIs to support existing client platforms."
+    ],
+    "skills": ["React", "Redux", "Node.js"]
+  }
+]
