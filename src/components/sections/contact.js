@@ -45,6 +45,7 @@ const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.primary};
+    text-decoration: underline;
   }
 `;
 
