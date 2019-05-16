@@ -1,48 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Typed from 'typed.js';
+import Typed from 'react-typed';
 import { rhythm } from '../../utils/typography';
 
-const strings = [
-  'likes design',
-  'wants your podcast suggestions',
-  'wants to buy a 3D printer',
-  'loves movies',
-  'lives in the Dominican Republic',
-  'loves pepperoni pizza',
-  'is a Star Wars fan',
-  'wants you to have a great day',
-];
-
-class Footer extends Component {
-  componentDidMount() {
-    this.typed = new Typed(this.el, {
-      strings,
-      typeSpeed: 40,
-      backSpeed: 40,
-      backDelay: 1500,
-      loop: true,
-      shuffle: true,
-    });
-  }
-
-  componentWillUnmount() {
-    this.typed.destroy();
-  }
-
-  render() {
-    return (
-      <Container>
-        {`© ${new Date().getFullYear()} — Adel Rodríguez `}
-        <span
-          ref={(el) => {
-            this.el = el;
-          }}
-        />
-      </Container>
-    );
-  }
-}
+const Footer = () => (
+  <Container>
+    {`© ${new Date().getFullYear()} — Adel Rodríguez `}
+    <Typed
+      strings={[
+        'likes design',
+        'wants your podcast suggestions',
+        'wants to buy a 3D printer',
+        'loves movies',
+        'lives in the Dominican Republic',
+        'loves pepperoni pizza',
+        'is a Star Wars fan',
+        'wants you to have a great day',
+      ]}
+      typeSpeed={40}
+      backSpeed={40}
+      backDelay={1500}
+      loop
+      shuffle
+    />
+  </Container>
+);
 
 const Container = styled.footer`
   font-size: 0.65rem;
