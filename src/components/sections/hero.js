@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typed from 'react-typed';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { scale, rhythm } from '../../utils/typography';
@@ -22,8 +23,27 @@ const Hero = () => {
   return (
     <SectionWrapper>
       <Container>
-        <HeroText>Hey, I&apos;m Adel!</HeroText>
-        <HeroText>Full Stack Developer and Mechatronic Engineer</HeroText>
+        <TextContainer>
+          <h1>Hey, I&apos;m Adel!</h1>
+          <h1>
+            I&apos;m
+            {' '}
+            <Typed
+              strings={[
+                'a Full Stack Developer',
+                'a Mechatronic Engineer',
+                'a design thinker',
+                'an innovator',
+                'a problem solver',
+                'a constant learner',
+              ]}
+              typeSpeed={40}
+              backSpeed={40}
+              backDelay={1500}
+              loop
+            />
+          </h1>
+        </TextContainer>
         <div style={{ marginTop: rhythm(0.75) }}>
           {allSocialJson.nodes.map(({ site, url, icon }) => (
             <SocialLink href={url} target="__blank" key={site}>
@@ -46,15 +66,22 @@ const SectionWrapper = styled.section`
 
 const Container = styled.div`
   padding-top: ${rhythm(6)};
-  max-width: 700px;
 `;
 
-const HeroText = styled.h1`
-  ${scale(1.5)};
-  margin-bottom: 0;
+const TextContainer = styled.div`
+  min-height: ${rhythm(5)};
 
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    ${scale(1)};
+    min-height: ${rhythm(8)};
+  }
+
+  h1 {
+    ${scale(1.5)};
+    margin-bottom: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint}) {
+      ${scale(1)};
+    }
   }
 `;
 
