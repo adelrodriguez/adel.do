@@ -71,13 +71,6 @@ const SEO = ({ lang, meta, keywords }) => {
             : [],
         )
         .concat(meta)}
-      link={[
-        {
-          rel: 'icon',
-          type: 'image/png',
-          href: '../../images/bearded-person-emoji.png',
-        },
-      ]}
     />
   );
 };
