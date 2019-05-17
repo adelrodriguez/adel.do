@@ -31,12 +31,15 @@ const Hero = () => {
             <Typed
               strings={[
                 'a Full Stack Developer',
-                'a problem solver',
                 'a Mechatronic Engineer',
                 'a design thinker',
-                'a constant learner',
+                'constantly learning',
                 'an innovator',
                 'an awesome teammate',
+                'a maker',
+                'creating value for my clients',
+                'a problem solver',
+                'happy to meet to meet you!',
               ]}
               typeSpeed={40}
               backSpeed={40}
