@@ -50,7 +50,7 @@ const Hero = () => {
         </TextContainer>
         <div style={{ marginTop: rhythm(0.75) }}>
           {allSocialJson.nodes.map(({ site, url, icon }) => (
-            <SocialLink href={url} target="__blank" key={site}>
+            <SocialLink href={url} target="__blank" key={site} aria-label={`Follow me on ${site}`}>
               <FontAwesomeIcon icon={['fab', icon]} />
             </SocialLink>
           ))}
