@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 import Image from 'gatsby-image';
 import Tag from './tag';
 import { rhythm } from '../utils/typography';
@@ -48,7 +49,7 @@ const Information = styled.div`
   }
 `;
 
-const Link = styled.a`
+const Link = styled(OutboundLink)`
   color: ${({ theme }) => theme.primary};
   font-size: 0.75rem;
   text-decoration: none;

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 import { rhythm } from '../utils/typography';
 
 const Publication = ({ title, url, description }) => (
@@ -27,7 +28,7 @@ const Title = styled.h3`
   text-decoration: underline;
 `;
 
-const Link = styled.a`
+const Link = styled(OutboundLink)`
   color: ${({ theme }) => theme.primary};
   font-size: 0.75rem;
   text-decoration: none;
