@@ -32,10 +32,10 @@ const About = () => {
 
         <AboutText>
           <p>
-            I&apos;m a Full Stack Developer and Mechatronic Engineer based in Santo Domingo,
+            I&apos;m a Full Stack Developer and Mechatronic Engineer based in Santo Domingo
             experienced in delivering high-quality web products and using a design-oriented approach
             to solving problems. I&apos;m passionate about startups, helping companies become more
-            innovative, and using tech to make a positive impact in society.
+            innovative, and using tech to make a positive impact on society.
           </p>
           {allSkillsJson.nodes.map(skill => (
             <Tag key={skill.name}>{skill.name}</Tag>
