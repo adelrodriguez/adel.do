@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Typed from 'react-typed';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -6,6 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { scale, rhythm } from '../../utils/typography';
 
 const Hero = () => {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setHeight(window.innerHeight);
+    }
+  });
+
   const { allSocialJson } = useStaticQuery(
     graphql`
       {
@@ -21,7 +29,7 @@ const Hero = () => {
   );
 
   return (
-    <SectionWrapper>
+    <section style={{ height }}>
       <Container>
         <TextContainer>
           <h1>Hey, I&apos;m Adel!</h1>
@@ -56,20 +64,15 @@ const Hero = () => {
           ))}
         </div>
       </Container>
-    </SectionWrapper>
+    </section>
   );
 };
 
-const SectionWrapper = styled.section`
-  margin-bottom: ${rhythm(10)};
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    margin-bottom: ${rhythm(5)};
-  }
-`;
-
 const Container = styled.div`
-  padding-top: ${rhythm(6)};
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const TextContainer = styled.div`
