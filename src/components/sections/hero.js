@@ -9,8 +9,9 @@ const Hero = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setHeight(window.innerHeight);
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const header = document.querySelector('header');
+      setHeight(window.innerHeight - header.offsetHeight);
     }
   });
 
@@ -42,11 +43,11 @@ const Hero = () => {
                 'a Mechatronic Engineer.',
                 'a design thinker.',
                 'a problem solver.',
-                'constantly learning.',
                 'an innovator.',
                 'an awesome teammate.',
                 'a maker.',
                 'creating value for my clients.',
+                'constantly learning.',
                 'happy to meet you!',
               ]}
               typeSpeed={40}
