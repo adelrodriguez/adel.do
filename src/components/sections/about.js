@@ -27,6 +27,7 @@ const About = () => {
 
   return (
     <SectionWrapper name="about-section">
+      <h1>About.</h1>
       <Container>
         <ProfilePicture fluid={profilePicture.childImageSharp.fluid} alt="Adel Rodríguez" />
 
@@ -49,17 +50,22 @@ const About = () => {
 
 const SectionWrapper = styled.section`
   margin-bottom: ${rhythm(10)};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 const Container = styled.div`
-  @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    flex-direction: column;
-  }
-
-  margin: 0 auto;
+  margin: ${rhythm(2)} auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    flex-direction: column;
+  }
 `;
 
 const ProfilePicture = styled(Image)`
