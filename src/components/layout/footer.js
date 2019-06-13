@@ -28,9 +28,7 @@ const Footer = () => (
 
 const Container = styled.footer`
   font-size: 0.65rem;
-  border-top: 1px solid #f0f0f0;
   margin-bottom: ${rhythm(1)};
-  padding: ${rhythm(0.5)} 0;
   color: ${({ theme }) => theme.gray};
 `;
 

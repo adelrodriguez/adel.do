@@ -31,9 +31,13 @@ Layout.propTypes = {
 };
 
 const Wrapper = styled.div`
-  width: 80vw;
+  width: 75vw;
   height: 100vh;
   margin: 0 auto;
+
+  @media (max-width: ${theme.breakpoint}) {
+    width: 85vw;
+  }
 `;
 
 export default Layout;
