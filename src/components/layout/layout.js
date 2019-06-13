@@ -30,12 +30,12 @@ Layout.propTypes = {
 };
 
 const Wrapper = styled.div`
-  width: 75vw;
+  width: 70vw;
   height: 100vh;
   margin: 0 auto;
 
   @media (max-width: ${theme.breakpoint}) {
-    width: 85vw;
+    width: 90vw;
   }
 `;
 
