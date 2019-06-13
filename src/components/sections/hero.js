@@ -1,36 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Typed from 'react-typed';
+import { Link } from 'react-scroll';
 import { useStaticQuery, graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { scale, rhythm } from '../../utils/typography';
 
 const Hero = () => {
-  const [height, setHeight] = useState(0);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      const header = document.querySelector('header');
-      setHeight(window.innerHeight - header.offsetHeight);
-    }
-  });
-
-  const { allSocialJson } = useStaticQuery(
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(
     graphql`
       {
-        allSocialJson {
-          nodes {
-            site
-            icon
-            url
+        site {
+          siteMetadata {
+            menuLinks {
+              name
+              link
+            }
           }
         }
       }
     `,
   );
 
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      setHeight(window.innerHeight);
+    }
+  });
+
   return (
-    <section style={{ height }}>
+    <SectionWrapper height={height}>
       <Container>
         <TextContainer>
           <h1>Hey, I&apos;m Adel!</h1>
@@ -57,17 +59,27 @@ const Hero = () => {
             />
           </h1>
         </TextContainer>
-        <div style={{ marginTop: rhythm(0.75) }}>
-          {allSocialJson.nodes.map(({ site, url, icon }) => (
-            <SocialLink href={url} target="__blank" key={site} aria-label={`Follow me on ${site}`}>
-              <FontAwesomeIcon icon={['fab', icon]} />
-            </SocialLink>
+        <Navbar>
+          {siteMetadata.menuLinks.map(menuLink => (
+            <MenuLink key={menuLink.name}>
+              <Link offset={-75} smooth to={menuLink.link}>
+                {menuLink.name}
+              </Link>
+            </MenuLink>
           ))}
-        </div>
+        </Navbar>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };
+
+const SectionWrapper = styled.section`
+  height: ${({ height }) => height}px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}) {
+    height: 100vh;
+  }
+`;
 
 const Container = styled.div`
   height: 100%;
@@ -80,7 +92,7 @@ const TextContainer = styled.div`
   min-height: ${rhythm(5)};
 
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    min-height: ${rhythm(8)};
+    min-height: ${rhythm(6)};
   }
 
   h1 {
@@ -93,19 +105,20 @@ const TextContainer = styled.div`
   }
 `;
 
-const SocialLink = styled.a`
-  margin: ${rhythm(0.5)} ${rhythm(0.75)};
-  ${scale(1.25)};
-  color: ${({ theme }) => theme.inactiveColor};
-  transition: color 0.5s;
+const Navbar = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: ${rhythm(1)};
+  font-family: 'CircularStd';
+`;
+
+const MenuLink = styled.div`
+  cursor: pointer;
+  user-select: none;
+  margin-right: ${rhythm(1)};
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    margin: ${rhythm(0.5)};
-    ${scale(1)};
+    text-decoration: underline;
   }
 `;
 

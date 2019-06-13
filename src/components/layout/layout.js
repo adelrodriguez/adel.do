@@ -4,7 +4,7 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import theme from '../../utils/theme';
-import { Header, Footer, SEO } from '.';
+import { Footer, SEO } from '.';
 
 library.add(fab);
 
@@ -19,7 +19,6 @@ const Layout = ({ children }) => (
     <Wrapper>
       <SEO />
       <GlobalStyle />
-      <Header />
       <main>{children}</main>
       <Footer />
     </Wrapper>
