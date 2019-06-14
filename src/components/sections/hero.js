@@ -35,6 +35,7 @@ const Hero = () => {
     <SectionWrapper height={height}>
       <Container>
         <TextContainer>
+          <Logo>{'<🧔🏻/>'}</Logo>
           <h1>Hey, I&apos;m Adel!</h1>
           <h1>
             I&apos;m
@@ -92,7 +93,7 @@ const TextContainer = styled.div`
   min-height: ${rhythm(5)};
 
   @media (max-width: ${({ theme }) => theme.breakpoint}) {
-    min-height: ${rhythm(6)};
+    min-height: ${rhythm(8)};
   }
 
   h1 {
@@ -103,6 +104,11 @@ const TextContainer = styled.div`
       ${scale(1)};
     }
   }
+`;
+
+const Logo = styled.div`
+  ${scale(0.75)};
+  font-family: 'CircularStd';
 `;
 
 const Navbar = styled.nav`
