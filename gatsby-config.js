@@ -3,7 +3,7 @@ module.exports = {
     title: 'Adel Rodríguez',
     description: "Hey, I'm Adel! Full Stack Developer and Mechatronic Engineer",
     author: 'Adel Rodríguez',
-    email: 'adelrodriguezv@gmail.com',
+    email: 'hello@adelrodriguez.com',
     menuLinks: [
       {
         name: 'about',

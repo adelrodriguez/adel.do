@@ -33,7 +33,7 @@ const Contact = () => {
       <Text>
         Want us to work together on a project?
         <br />
-        <Link href={`mailto:${siteMetadata.email}`}>Let&apos;s talk.</Link>
+        <Link href={`mailto:${siteMetadata.email}`}>Let&apos;s talk!</Link>
       </Text>
       <SocialLinks>
         {allSocialJson.nodes.map(({ site, url, icon }) => (
