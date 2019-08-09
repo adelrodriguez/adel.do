@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Adel Rodríguez',
-    description: "Hey, I'm Adel! Full Stack Developer and Mechatronic Engineer",
+    title: 'Adel Rodríguez - Full Stack Developer and Mechatronic Engineer',
+    description: "Hello, I'm Adel! Full Stack Developer and Mechatronic Engineer",
     author: 'Adel Rodríguez',
     email: 'hello@adelrodriguez.com',
     menuLinks: [

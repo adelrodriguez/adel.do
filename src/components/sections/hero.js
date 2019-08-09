@@ -36,7 +36,7 @@ const Hero = () => {
       <Container>
         <TextContainer>
           <Logo>{'<🧔🏻/>'}</Logo>
-          <h1>Hey, I&apos;m Adel!</h1>
+          <h1>Hello, I&apos;m Adel!</h1>
           <h1>
             I&apos;m
             {' '}
