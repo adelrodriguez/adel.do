@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.3.32",
     "gatsby-transformer-json": "^2.4.13",
     "gatsby-transformer-sharp": "^2.5.16",
+    "gatsby-transformer-yaml": "^2.4.13",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

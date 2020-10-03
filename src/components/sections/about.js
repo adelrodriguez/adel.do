@@ -6,13 +6,12 @@ import { rhythm } from '../../utils/typography';
 import { BackToTop, Tag } from '..';
 
 const About = () => {
-  const { allSkillsJson, profilePicture } = useStaticQuery(
+  const { contentYaml, profilePicture } = useStaticQuery(
     graphql`
       {
-        allSkillsJson {
-          nodes {
-            name
-          }
+        contentYaml {
+          skills
+          description
         }
         profilePicture: file(relativePath: { eq: "profile-picture.jpg" }) {
           childImageSharp {
@@ -33,13 +32,10 @@ const About = () => {
 
         <AboutText>
           <p>
-            I&apos;m a Full Stack Developer and Mechatronic Engineer based in Santo Domingo
-            experienced in delivering high-quality web products and using a design-oriented approach
-            to solving problems. I&apos;m passionate about startups, helping companies become more
-            innovative, and using tech to make a positive impact on society.
+            {contentYaml.description}
           </p>
-          {allSkillsJson.nodes.map(skill => (
-            <Tag key={skill.name}>{skill.name}</Tag>
+          {contentYaml.skills.map(skill => (
+            <Tag key={skill}>{skill}</Tag>
           ))}
         </AboutText>
       </Container>

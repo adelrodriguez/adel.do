@@ -7,7 +7,7 @@ import resume from '../../assets/pdfs/resume.pdf';
 
 const Contact = () => {
   const {
-    allSocialJson,
+    allSocialYaml,
     site: { siteMetadata },
   } = useStaticQuery(
     graphql`
@@ -17,7 +17,7 @@ const Contact = () => {
             email
           }
         }
-        allSocialJson {
+        allSocialYaml {
           nodes {
             site
             icon
@@ -36,7 +36,7 @@ const Contact = () => {
         <Link href={`mailto:${siteMetadata.email}`}>Let&apos;s talk!</Link>
       </Text>
       <SocialLinks>
-        {allSocialJson.nodes.map(({ site, url, icon }) => (
+        {allSocialYaml.nodes.map(({ site, url, icon }) => (
           <SocialLink href={url} target="__blank" key={site} aria-label={`Follow me on ${site}`}>
             <FontAwesomeIcon icon={['fab', icon]} />
           </SocialLink>

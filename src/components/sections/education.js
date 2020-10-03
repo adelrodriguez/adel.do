@@ -5,15 +5,15 @@ import { rhythm } from '../../utils/typography';
 import { BackToTop, Degree } from '..';
 
 const Education = () => {
-  const { allDegreesJson } = useStaticQuery(graphql`
+  const { allEducationYaml } = useStaticQuery(graphql`
     {
-      allDegreesJson {
+      allEducationYaml {
         nodes {
           id
           school
           degree
           field
-          details
+          description
           startYear
           endYear
         }
@@ -24,7 +24,7 @@ const Education = () => {
   return (
     <SectionWrapper name="education-section">
       <h1>Education.</h1>
-      {allDegreesJson.nodes.map(({ id, ...degree }) => (
+      {allEducationYaml.nodes.map(({ id, ...degree }) => (
         <Degree {...degree} key={id} />
       ))}
       <BackToTop />

@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import { rhythm } from '../utils/typography';
 
 const Degree = ({
-  school, degree, field, details, startYear, endYear,
+  school, degree, field, description, startYear, endYear,
 }) => (
   <Container>
     <School>{school}</School>
     <Field>{`${degree}, ${field}`}</Field>
     <Year>{`${startYear} - ${endYear}`}</Year>
-    <Details>{details}</Details>
+    <Details>{description}</Details>
   </Container>
 );
 
@@ -46,7 +46,7 @@ Degree.propTypes = {
   school: PropTypes.string.isRequired,
   degree: PropTypes.string.isRequired,
   field: PropTypes.string.isRequired,
-  details: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   startYear: PropTypes.string.isRequired,
   endYear: PropTypes.string.isRequired,
 };

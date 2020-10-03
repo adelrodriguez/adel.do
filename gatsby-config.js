@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Adel Rodríguez - Full Stack Developer and Mechatronic Engineer',
-    description: "Hello, I'm Adel! Full Stack Developer and Mechatronic Engineer",
+    title: 'Adel Rodríguez - Full Stack Developer and Mechatronics Engineer',
+    description: "Hello, I'm Adel! Full Stack Developer and Mechatronics Engineer",
     author: 'Adel Rodríguez',
     email: 'hello@adelrodriguez.com',
     menuLinks: [
@@ -47,6 +47,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-json',
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -58,7 +59,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/content/`,
       },
     },
     'gatsby-transformer-sharp',

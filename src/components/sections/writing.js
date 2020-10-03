@@ -5,10 +5,10 @@ import { rhythm } from '../../utils/typography';
 import { BackToTop, Publication } from '..';
 
 const Writing = () => {
-  const { allPublicationsJson } = useStaticQuery(
+  const { allWritingYaml } = useStaticQuery(
     graphql`
       {
-        allPublicationsJson {
+        allWritingYaml {
           nodes {
             id
             title
@@ -23,7 +23,7 @@ const Writing = () => {
   return (
     <SectionWrapper name="writing-section">
       <h1>Writing.</h1>
-      {allPublicationsJson.nodes.map(({ id, ...publication }) => (
+      {allWritingYaml.nodes.map(({ id, ...publication }) => (
         <Publication {...publication} key={id} />
       ))}
       <BackToTop />
