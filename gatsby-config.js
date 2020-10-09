@@ -48,6 +48,7 @@ module.exports = {
     },
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

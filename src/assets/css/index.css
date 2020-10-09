@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  user-select: none;
+  @apply m-auto;
+  @apply w-11/12;
+}
+
+.animated-underline {
+  text-decoration: none;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#000, #000);
+  background-size: 100% 0.25rem, 100% 0.25rem;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat, no-repeat;
+  transition: background-size 200ms linear;
+}
+
+.animated-underline:hover {
+  background-size: 0 0.25rem, 100% 0.25rem;
+}
+
+
+@screen md {
+  body {
+    @apply w-9/12;
+  }
+}
+
+@screen lg {
+  body {
+    @apply w-7/12;
+  }
+}

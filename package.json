@@ -16,6 +16,7 @@
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^2.4.33",
     "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-postcss": "^3.0.1",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-sharp": "^2.6.38",
     "gatsby-plugin-styled-components": "^3.3.12",
@@ -24,15 +25,13 @@
     "gatsby-transformer-json": "^2.4.13",
     "gatsby-transformer-sharp": "^2.5.16",
     "gatsby-transformer-yaml": "^2.4.13",
-    "prop-types": "^15.7.2",
+    "postcss": "^8.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-scroll": "^1.8.1",
     "react-typed": "^1.2.0",
-    "react-typography": "^0.16.19",
-    "styled-components": "^4.4.1",
-    "typography": "^0.16.19"
+    "tailwindcss": "^1.8.12"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
