@@ -30,7 +30,7 @@ const Position = ({
       <ul>
         {achievements.map((text, index) => (
           <li
-            className="flex text-gray-700 text-lg mb-2 md:text-xl"
+            className="flex text-gray-700 text-base mb-2 md:text-lg"
             key={text.length + index + new Date().getTime()}
           >
             <div className="mr-4">✔️</div>

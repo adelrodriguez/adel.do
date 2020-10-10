@@ -34,7 +34,7 @@ function About() {
           className="mb-8 w-screen h-96 md:mb-0 md:h-64 md:min-w-64 md:w-64 md:rounded-full"
         />
         <div className="md:ml-8">
-          <p className="text-xl text-gray-700">{aboutContent.description}</p>
+          <p className="text-lg md:text-xl text-gray-700">{aboutContent.description}</p>
           <div className="flex flex-wrap mt-8">
             {aboutContent.skills.map(skill => (
               <div key={skill} className="my-2 mr-4">

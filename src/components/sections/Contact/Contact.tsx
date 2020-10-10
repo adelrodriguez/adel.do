@@ -29,23 +29,24 @@ const Contact = () => {
           Let&apos;s talk!
         </a>
       </h3>
-      <div className="my-16 mx-auto">
+      <div className="flex my-16 mx-auto">
         {socialContent.nodes.map(({ site, url, icon }) => (
-          <a
-            href={url}
-            target="__blank"
-            key={site}
-            aria-label={`Follow me on ${site}`}
-            className="mx-4 md:mx-8 text-4xl md:text-5xl text-gray-700 hover:text-blue-900 transition-colors duration-500 ease-in-out"
-          >
-            <FontAwesomeIcon icon={['fab', icon]} />
-          </a>
+          <div className="mx-4 md:mx-8" key={site}>
+            <a
+              href={url}
+              target="__blank"
+              aria-label={`Follow me on ${site}`}
+              className="text-4xl md:text-5xl text-gray-700 hover:text-blue-900 hover:animate-pulse transition-colors duration-500 ease-in-out"
+            >
+              <FontAwesomeIcon icon={['fab', icon]} />
+            </a>
+          </div>
         ))}
       </div>
-      <div className="text-center">
+      <div className="text-center mb-12">
         <a
           href="/Adel-Rodriguez_resume.pdf"
-          className="text-3xl md:text-4xl font-black text-gray-700 hover:underline"
+          className="text-3xl md:text-4xl font-black text-gray-700 hover:text-blue-900 hover:animate-pulse transition-colors duration-500 ease-in-out"
         >
           Download my resume.
         </a>

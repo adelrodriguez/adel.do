@@ -20,7 +20,7 @@ const Publication = ({ title, url, description }: Props) => (
         {url}
       </OutboundLink>
     </div>
-    <p className="text-gray-700 mb-2 text-lg md:text-xl">{description}</p>
+    <p className="text-gray-700 mb-2 text-base md:text-lg">{description}</p>
   </div>
 );
 

@@ -24,7 +24,7 @@ function Degree({
       <p className="text-gray-700 mb-2 text-lg md:text-xl">
         {`${startYear} - ${endYear || 'Present'}`}
       </p>
-      <p className="text-gray-700 text-md">{description}</p>
+      <p className="text-gray-700 text-base md:text-lg">{description}</p>
     </div>
   );
 }
