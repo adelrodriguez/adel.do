@@ -3,7 +3,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import SEO from './SEO';
 import Footer from './Footer';
-import 'circular-std';
 
 library.add(fab);
 
