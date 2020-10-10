@@ -37,8 +37,8 @@ function About() {
           <p className="text-xl text-gray-700">{aboutContent.description}</p>
           <div className="flex flex-wrap mt-8">
             {aboutContent.skills.map(skill => (
-              <div className="my-2 mr-4">
-                <Tag key={skill}>{skill}</Tag>
+              <div key={skill} className="my-2 mr-4">
+                <Tag>{skill}</Tag>
               </div>
             ))}
           </div>

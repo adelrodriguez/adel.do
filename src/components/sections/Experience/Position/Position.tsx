@@ -20,9 +20,7 @@ const Position = ({
 }: Props) => (
   <div className="flex flex-col mb-4 md:flex-row">
     <div className="mb-4 md:mb-0 md:w-4/12">
-      <h4 className="font-bold mb-2 text-xl md:text-2xl">
-        {position}
-      </h4>
+      <h4 className="font-bold mb-2 text-xl md:text-2xl">{position}</h4>
       <p className="text-gray-700 text-lg md:text-xl">{company}</p>
       <p className="text-gray-700 text-lg md:text-xl">
         {`${startDate} - ${endDate || 'Present'}`}
@@ -42,8 +40,8 @@ const Position = ({
       </ul>
       <div className="flex flex-wrap mt-4">
         {skills.map(skill => (
-          <div className="my-2 mx-2">
-            <Tag key={skill}>{skill}</Tag>
+          <div className="my-2 mx-2" key={skill}>
+            <Tag>{skill}</Tag>
           </div>
         ))}
       </div>

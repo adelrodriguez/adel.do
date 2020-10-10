@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const Project = ({ title, url, description, image, skills }: Props) => (
-  <div className="flex flex-col mb-4 md:flex-row items-center md:items-start">
+  <div className="flex flex-col md:flex-row items-center md:items-start">
     <Image
       fluid={image.childImageSharp.fluid}
       alt={title}
@@ -33,8 +33,8 @@ const Project = ({ title, url, description, image, skills }: Props) => (
       <p className="text-lg md:text-xl text-gray-700">{description}</p>
       <div className="flex flex-wrap mt-4">
         {skills.map(skill => (
-          <div className="my-2 mx-2">
-            <Tag key={skill}>{skill}</Tag>
+          <div key={skill} className="my-2 mx-2">
+            <Tag>{skill}</Tag>
           </div>
         ))}
       </div>

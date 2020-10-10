@@ -31,8 +31,8 @@ function Experience() {
     <Section name="experience-section">
       <Header>💼 Experience.</Header>
       {experienceContent.nodes.map(({ id, ...job }: PositionProps) => (
-        <div className="mb-8">
-          <Position {...job} key={id} />
+        <div key={id} className="mb-8">
+          <Position {...job} />
         </div>
       ))}
     </Section>

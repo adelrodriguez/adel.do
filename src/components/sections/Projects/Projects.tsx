@@ -36,7 +36,9 @@ const Projects = () => {
     <Section name="projects-section">
       <Header>🔧 Projects.</Header>
       {projectContent.nodes.map(({ id, ...project }: ProjectProps) => (
-        <Project {...project} key={id} />
+        <div className="mb-4" key={id}>
+          <Project {...project} />
+        </div>
       ))}
     </Section>
   );

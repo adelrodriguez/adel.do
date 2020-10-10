@@ -29,8 +29,8 @@ const Education = () => {
     <Section name="education-section">
       <Header>🎓 Education.</Header>
       {educationContent.nodes.map(({ id, ...degree }: DegreeProps) => (
-        <div className="mb-8">
-          <Degree {...degree} key={id} />
+        <div className="mb-8" key={id}>
+          <Degree {...degree} />
         </div>
       ))}
     </Section>
