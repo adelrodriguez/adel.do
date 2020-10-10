@@ -4,48 +4,35 @@ module.exports = {
     description: "Hello, I'm Adel! Full Stack Developer and Mechatronics Engineer",
     author: 'Adel Rodríguez',
     email: 'hello@adelrodriguez.com',
-    menuLinks: [
+    navLinks: [
       {
-        name: 'about',
-        link: 'about-section',
+        label: 'about',
+        value: 'about-section',
       },
       {
-        name: 'experience',
-        link: 'experience-section',
+        label: 'experience',
+        value: 'experience-section',
       },
       {
-        name: 'projects',
-        link: 'projects-section',
+        label: 'education',
+        value: 'education-section',
       },
       {
-        name: 'education',
-        link: 'education-section',
+        label: 'projects',
+        value: 'projects-section',
       },
       {
-        name: 'writing',
-        link: 'writing-section',
+        label: 'writing',
+        value: 'writing-section',
       },
       {
-        name: 'contact',
-        link: 'contact-section',
+        label: 'contact',
+        value: 'contact-section',
       },
     ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-styled-components',
-      options: {
-        displayName: false,
-        pure: true,
-      },
-    },
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
     'gatsby-plugin-postcss',

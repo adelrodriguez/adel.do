@@ -12,6 +12,9 @@ module.exports = {
       fontSize: {
         '7xl': '5rem',
       },
+      minHeight: {
+        '1/2-screen': '50vh',
+      },
       minWidth: {
         64: '16rem',
       },
