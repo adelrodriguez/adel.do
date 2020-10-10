@@ -18,7 +18,7 @@ const Project = ({ title, url, description, image, skills }: Props) => (
       alt={title}
       className="mb-8 w-screen h-96 md:mb-0 md:h-64 md:min-w-64 md:w-64"
     />
-    <div className="md:ml-8 md:w-full">
+    <div className="md:ml-8 w-full">
       <h4 className="font-bold mb-2 text-xl md:text-2xl">{title}</h4>
       <div className="mb-4">
         <span>🔗</span>{' '}
