@@ -36,7 +36,7 @@ const Contact = () => {
               href={url}
               target="__blank"
               aria-label={`Follow me on ${site}`}
-              className="text-4xl md:text-5xl text-gray-700 hover:text-blue-900 hover:animate-pulse transition-colors duration-500 ease-in-out"
+              className="text-4xl md:text-5xl text-gray-700 hover:text-blue-300 transition-colors duration-500 ease-in-out"
             >
               <FontAwesomeIcon icon={['fab', icon]} />
             </a>
@@ -46,7 +46,7 @@ const Contact = () => {
       <div className="text-center mb-12">
         <a
           href="/Adel-Rodriguez_resume.pdf"
-          className="text-3xl md:text-4xl font-black text-gray-700 hover:text-blue-900 hover:animate-pulse transition-colors duration-500 ease-in-out"
+          className="text-3xl md:text-4xl font-black text-gray-700 hover:text-blue-300 transition-colors duration-500 ease-in-out"
         >
           Download my resume.
         </a>

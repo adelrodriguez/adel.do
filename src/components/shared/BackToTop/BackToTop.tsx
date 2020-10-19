@@ -5,7 +5,7 @@ import { animateScroll as scroll } from 'react-scroll';
 function BackToTop() {
   return (
     <div
-      className="flex justify-end items-baseline mt-8 "
+      className="flex justify-end mt-8"
       onClick={scroll.scrollToTop}
     >
       <div className="text-sm md:text-base cursor-pointer hover:animate-bounce">
