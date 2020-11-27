@@ -1,1 +1,2 @@
-export { default, Props } from './Publication';
+export type { Props } from './Publication';
+export { default } from './Publication';

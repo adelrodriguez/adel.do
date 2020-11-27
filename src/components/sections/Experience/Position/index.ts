@@ -1,1 +1,2 @@
-export { default, Props } from './Position';
+export type { Props } from './Position';
+export { default } from './Position';
