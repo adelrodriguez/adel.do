@@ -1,8 +1,10 @@
 import React from 'react';
 import Tag from '../../../shared/Tag';
+import Link from '../../../shared/Link';
 
 export interface Props {
   company: string;
+  website?: string;
   position: string;
   startDate: string;
   endDate: string;
@@ -12,6 +14,7 @@ export interface Props {
 
 const Position = ({
   company,
+  website,
   position,
   startDate,
   endDate,
@@ -22,6 +25,7 @@ const Position = ({
     <div className="mb-4 md:mb-0 md:w-4/12">
       <h4 className="font-bold mb-2 text-xl md:text-2xl">{position}</h4>
       <p className="text-gray-700 text-lg md:text-xl">{company}</p>
+      {website && <Link url={website} />}
       <p className="text-gray-700 text-lg md:text-xl">
         {`${startDate} - ${endDate || 'Present'}`}
       </p>

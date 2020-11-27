@@ -16,6 +16,7 @@ function Experience() {
           nodes {
             id
             company
+            website
             position
             startDate
             endDate
