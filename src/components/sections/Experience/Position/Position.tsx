@@ -1,6 +1,7 @@
 import React from 'react';
 import Tag from '../../../shared/Tag';
 import Link from '../../../shared/Link';
+import Favicon from '../../../shared/Favicon';
 
 export interface Props {
   company: string;
@@ -24,7 +25,10 @@ const Position = ({
   <div className="flex flex-col mb-4 md:flex-row">
     <div className="mb-4 md:mb-0 md:w-4/12">
       <h4 className="font-bold mb-2 text-xl md:text-2xl">{position}</h4>
-      <p className="text-gray-700 text-lg md:text-xl">{company}</p>
+      <div className="flex items-center">
+        <Favicon domain={website} size={24} />
+        <div className="text-gray-700 text-lg md:text-xl ml-2">{company}</div>
+      </div>
       {website && <Link url={website} />}
       <p className="text-gray-700 text-lg md:text-xl">
         {`${startDate} - ${endDate || 'Present'}`}
