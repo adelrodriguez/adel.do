@@ -1,5 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-gtag';
+import cleanUrl from '../../../utils/clean-url';
 
 interface Props {
   url: string;
@@ -13,7 +14,7 @@ const Link: React.FC<Props> = ({ url }) => (
       target="__blank"
       className="text-lg md:text-xl text-blue-700 hover:underline"
     >
-      {url.replace(/https?:\/\//, '')}
+      {cleanUrl(url)}
     </OutboundLink>
   </>
 );
