@@ -21,7 +21,7 @@ function Hero() {
   return (
     <Section name="hero-section">
       <div className="flex flex-col justify-center font-black">
-        <span className="text-3xl md:text-5xl">{'<🧔🏻/>'}</span>
+        <span className="text-3xl md:text-5xl">{'<🧔🏻‍♂️/>'}</span>
         <h1 className="text-4xl md:text-6xl">{heroContent.header}</h1>
         <div className="h-32 md:h-48 xl:h-auto">
           <h2 className="text-4xl md:text-6xl">
