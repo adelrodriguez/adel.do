@@ -21,10 +21,10 @@ function Hero() {
   return (
     <Section name="hero-section">
       <div className="flex flex-col justify-center font-black">
-        <span className="text-3xl md:text-5xl">{'<🧔🏻‍♂️/>'}</span>
-        <h1 className="text-4xl md:text-6xl">{heroContent.header}</h1>
+        <span className="text-3xl leading-relaxed md:text-5xl md:leading-relaxed">{'<🧔🏻‍♂️/>'}</span>
+        <h1 className="text-4xl leading-relaxed md:text-6xl md:leading-relaxed">{heroContent.header}</h1>
         <div className="h-32 md:h-48 xl:h-auto">
-          <h2 className="text-4xl md:text-6xl">
+          <h2 className="text-4xl leading-relaxed  md:text-6xl md:leading-relaxed">
             I&apos;m{' '}
             <Typed
               strings={heroContent.content}

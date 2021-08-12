@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <Section name="contact-section">
-      <h3 className="text-4xl md:text-5xl text-center font-black">
+      <h3 className="text-4xl leading-normal md:text-5xl md:leading-normal text-center font-black">
         Want us to work together on a project?
         <br />
         <a className="animated-underline" href={`mailto:${siteMetadata.email}`}>
