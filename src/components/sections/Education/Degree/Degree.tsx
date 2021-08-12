@@ -20,7 +20,9 @@ function Degree({
   return (
     <div className="mb-4">
       <h4 className="font-bold mb-2 text-xl md:text-2xl">{school}</h4>
-      <p className="text-gray-700 text-lg md:text-xl">{degree}, {field}</p>
+      <p className="text-gray-700 text-lg md:text-xl">
+        {degree}, {field}
+      </p>
       <p className="text-gray-700 mb-2 text-lg md:text-xl">
         {`${startYear} - ${endYear || 'Present'}`}
       </p>

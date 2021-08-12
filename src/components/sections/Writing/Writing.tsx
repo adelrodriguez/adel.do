@@ -21,7 +21,7 @@ const Writing = () => {
           }
         }
       }
-    `,
+    `
   );
 
   return (

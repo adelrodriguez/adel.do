@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 interface Props {
-    label: string;
-    value: string;
+  label: string;
+  value: string;
 }
 
 function NavLink({ label, value }: Props) {

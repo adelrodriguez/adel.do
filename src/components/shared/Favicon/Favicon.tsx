@@ -2,8 +2,8 @@ import React from 'react';
 import cleanUrl from '../../../utils/clean-url';
 
 interface Props {
-  domain: string
-  size?: number
+  domain: string;
+  size?: number;
 }
 
 function Favicon({ size = 16, domain }: Props) {
