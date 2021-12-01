@@ -22,7 +22,7 @@
     "gatsby-transformer-json": "^2.4.13",
     "gatsby-transformer-sharp": "^2.5.16",
     "gatsby-transformer-yaml": "^2.4.13",
-    "postcss": "^8.1.1",
+    "postcss": "^8.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
