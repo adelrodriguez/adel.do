@@ -1,4 +1,7 @@
 ---
+import Typing from "@/components/Typing.astro"
+import footer from "@/content/footer.json"
+
 interface Props {
   title: string
 }
@@ -22,5 +25,11 @@ const { title } = Astro.props
     <main class="mx-auto w-11/12 md:w-9/12 lg:w-8/12">
       <slot />
     </main>
+    <footer
+      class="mx-auto w-11/12 border-t border-solid border-gray-200 py-4 text-xs font-light text-gray-700 md:w-9/12 md:text-sm lg:w-8/12"
+    >
+      {`© ${new Date().getFullYear()} — Adel Rodríguez `}
+      <Typing id="footer" messages={footer} />
+    </footer>
   </body>
 </html>
