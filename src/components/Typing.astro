@@ -1,0 +1,36 @@
+---
+interface Props {
+  id: string
+  messages: string[]
+}
+
+const { id, messages } = Astro.props
+---
+
+<astro-typed data-id={id} data-messages={messages}>
+  <span id={id}></span>
+</astro-typed>
+
+<script>
+  import Typed from "typed.js"
+
+  class AstroTyped extends HTMLElement {
+    constructor() {
+      super()
+
+      const id = this.dataset.id
+      const messages = this.dataset.messages?.split(",")
+
+      new Typed(`#${id}`, {
+        strings: messages,
+        typeSpeed: 40,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+        smartBackspace: true,
+      })
+    }
+  }
+
+  customElements.define("astro-typed", AstroTyped)
+</script>

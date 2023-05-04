@@ -1,0 +1,41 @@
+[
+  {
+    "name": "about",
+    "url": "#about"
+  },
+  {
+    "name": "tech",
+    "url": "#tech"
+  },
+  {
+    "name": "experience",
+    "url": "#experience"
+  },
+  {
+    "name": "education",
+    "url": "#education"
+  },
+  {
+    "name": "projects",
+    "url": "#projects"
+  },
+  {
+    "name": "contact",
+    "url": "mailto:hello@adelrodriguez.com"
+  },
+  {
+    "name": "github",
+    "url": "https://www.github.com/adelrodriguez",
+    "external": true
+  },
+  {
+    "name": "twitter",
+    "url": "https://twitter.com/adelrodriguezv",
+    "external": true
+  },
+  {
+    "name": "linkedin",
+    "url": "https://www.linkedin.com/in/adelrodriguez/",
+    "external": true
+  }
+]

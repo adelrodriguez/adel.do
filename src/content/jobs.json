@@ -1,0 +1,87 @@
+[
+  {
+    "position": "Founder & CTO",
+    "url": "https://www.giftthelisting.com/",
+    "company": "The Listing",
+    "startDate": "April 2021",
+    "endDate": "Present",
+    "achievements": [
+      "Service allowing users to create gift registries aggregating products from multiple stores across Santo Domingo.",
+      "Built using Remix as a custom storefront and Shopify to manage the e-commerce backend.",
+      "Created a web scraping service using Playwright to extract product information from dozens of different stores."
+    ]
+  },
+  {
+    "position": "React Developer (Contract)",
+    "url": "https://g2i.co/",
+    "company": "G2i",
+    "startDate": "April 2020",
+    "endDate": "Present",
+    "achievements": [
+      "Contract developer focused on developing solutions to complex problems using React, React Native, Node.js, and GraphQL.",
+      "Developed web applications for hosting digital events using React and Firebase under strict deadlines.",
+      "Maintained and improved clients’ codebases across various technologies (Hugo, Grow, Angular as some examples)."
+    ]
+  },
+  {
+    "position": "Software Engineer",
+    "url": "https://synthesis.com/",
+    "company": "Synthesis",
+    "startDate": "January 2022",
+    "endDate": "November 2022",
+    "achievements": [
+      "Shipped features to increase student networking: chat for student cohorts, SMS notifications for classes using Twilio, follow system for students and teachers, and student profiles.",
+      "Rewrote the subscription system, simplifying it and decoupling it from Stripe, solving issues charging customers and helped Operations team solve outstanding year long issues.",
+      "Integrated E2E testing into the CI workflow with Playwright and Docker.",
+      "Optimized CI workflow, reducing test times from 9 to under 4 minutes.",
+      "Contributed to Play, an event-driven system using Apache Kafka and XState.",
+      "Maintained and enhanced the student Portal using Next.js, TypeScript, and TypeORM."
+    ]
+  },
+  {
+    "position": "Software Engineer",
+    "url": "https://nanos.ai/",
+    "company": "Nanos",
+    "startDate": "October 2020",
+    "endDate": "January 2022",
+    "achievements": [
+      "Enhanced the ad creation wizard by encouraging users to rely more on the suggestions provided by the ML algorithm.",
+      "Worked with the Facebook Marketing and Google Ads APIs, initiating the migration from the AdWords API to the new Ads API.",
+      "Collaborated with external partners to transform the product into a whitelabel service, working closely with developers outside the organization to ensure successful implementation.",
+      "Performed extensive refactoring and bug fixing across the company’s legacy codebase, migrating old front-end components to newer React standards."
+    ]
+  },
+  {
+    "position": "Community Expert",
+    "url": "https://toggl.com/",
+    "company": "Toggl Hire",
+    "startDate": "January 2021",
+    "endDate": "January 2022",
+    "achievements": [
+      "Developed questions for JavaScript, React, and Git skills tests, taken by thousands of candidates weekly."
+    ]
+  },
+  {
+    "position": "Front End Developer (Contract)",
+    "company": "Left Field Labs",
+    "url": "https://leftfieldlabs.com/",
+    "startDate": "April 2021",
+    "endDate": "October 2021",
+    "achievements": [
+      "Developed web applications and Chrome Extensions using React, Preact, and TypeScript with strict time constraints for time-sensitive digital events.",
+      "Collaborated with product teams to enhance accessibility and localization across client projects."
+    ]
+  },
+  {
+    "position": "Front End Developer",
+    "company": "Genome Digital",
+    "url": "https://geno.me/",
+    "startDate": "July 2018",
+    "endDate": "March 2020",
+    "achievements": [
+      "Led teams of 3-4 developers in creating web and mobile applications with React and React Native.",
+      "Implemented technologies to streamline development workflow (Storybook, Apollo GraphQL, TypeScript).",
+      "Maintained and updated legacy applications and codebases."
+    ]
+  }
+]

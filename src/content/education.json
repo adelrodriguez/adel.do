@@ -1,0 +1,20 @@
+[
+  {
+    "school": "Tecnológico de Monterrey",
+    "url": "https://tec.mx/",
+    "degree": "Master's Degree",
+    "field": "Innovation for Business Development",
+    "description": "Concentration on Innovation Strategy by the Stanford Center for Professional Development from Stanford University.",
+    "startYear": 2016,
+    "endYear": 2019
+  },
+  {
+    "school": "Instituto Tecnológico de Santo Domingo",
+    "url": "https://www.intec.edu.do/",
+    "degree": "Bachelor's Degree",
+    "field": "Mechatronic Engineering",
+    "description": "Graduated Cum Laude. Minor in Innovation and Entrepreneurship.",
+    "startYear": 2010,
+    "endYear": 2014
+  }
+]

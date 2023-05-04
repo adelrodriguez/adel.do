@@ -1,0 +1,19 @@
+---
+interface Props {
+  website: string
+  classes?: string
+}
+
+const { website, classes } = Astro.props
+const url = website
+  .replace(/^https?:\/\//, "") // Remove http:// or https://
+  .replace(/^www\./, "") // Remove www.
+  .replace(/\/$/, "") // Remove trailing backslash
+---
+
+<img
+  src={`https://icons.duckduckgo.com/ip3/${url}.ico`}
+  alt=""
+  role="presentation"
+  class={classes}
+/>

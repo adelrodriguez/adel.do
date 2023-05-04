@@ -1,15 +1,151 @@
 ---
+import { Image } from "astro:assets"
+
+import Layout from "@/layouts/Layout.astro"
+import Typing from "@/components/Typing.astro"
+
+import intro from "@/content/intro.json"
+import links from "@/content/nav.json"
+import tech from "@/content/tech.json"
+import jobs from "@/content/jobs.json"
+import education from "@/content/education.json"
+
+import me from "@/assets/adel.jpg"
+import Favicon from "@/components/Favicon.astro"
+import Section from "@/components/Section.astro"
+import NavLink from "@/components/NavLink.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Hello, I'm Adel!">
+  <section class="flex min-h-screen items-center">
+    <div class="select-none font-bold">
+      <div class="mb-5 text-3xl md:text-5xl">
+        {"<🧔🏻‍♂️/>"}
+      </div>
+      <div class="mb-4 text-4xl tracking-tight md:text-6xl">
+        <h1 class="leading-normal md:leading-normal">Hello, I'm Adel!</h1>
+        <div class="h-32 md:h-48 xl:h-auto">
+          <h2 class="leading-normal md:leading-normal">
+            I'm
+            <Typing id="hello" messages={intro} />
+          </h2>
+        </div>
+      </div>
+      <nav class="font-light">
+        {
+          links.map((link) => (
+            <div class="group mb-2 mr-5 inline-block">
+              <NavLink
+                name={link.name}
+                url={link.url}
+                external={link.external}
+              />
+            </div>
+          ))
+        }
+      </nav>
+    </div>
+  </section>
+
+  <Section id="about" title="👨🏻‍💻 About.">
+    <div class="my-4 flex flex-col-reverse items-center sm:my-20 md:flex-row">
+      <p
+        class="text-lg font-light leading-relaxed md:mr-10 md:text-xl md:leading-loose"
+      >
+        I'm a software engineer based in Santo Domingo, Dominican Republic. Most
+        of my experience has been on the web, mostly on the frontend, lately
+        doing fullstack. I love to learn new technologies and love developing
+        simple and clean solutions to complex problems. I liked to ship quickly
+        and often, avoiding overengineering and premature optimization. Less is
+        always more.
+      </p>
+      <div
+        class="relative mb-10 aspect-[9/10] w-64 flex-none rotate-2 overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:rotate-0 hover:scale-110 sm:w-72 sm:rounded-2xl md:m-0"
+      >
+        <Image
+          src={me}
+          alt="Adel"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  </Section>
+
+  <Section id="tech" title="💻 Tech.">
+    <p class="text-lg font-light md:text-xl">
+      Some of the technologies I work with:
+    </p>
+    <ul class="mb-36 mt-16 md:text-center">
+      {
+        tech.map((t) => (
+          <li class="inline-block cursor-default px-5 py-2 transition-all duration-200 hover:rounded-full hover:bg-gray-800 hover:text-white sm:text-lg">
+            {t}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <Section id="experience" title="💼 Experience.">
+    <div class="my-4 sm:my-20">
+      {
+        jobs.map((job) => (
+          <div class="mb-10 grid grid-cols-6">
+            <div class="col-span-full sm:col-span-2">
+              <div class="flex items-center">
+                <Favicon website={job.url} classes="h-5 w-5 mr-2" />
+                <a
+                  class="text-xl font-bold"
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {job.company}
+                </a>
+              </div>
+
+              <p class="text-lg font-light">{job.position}</p>
+              <p class="text-lg font-light">
+                {job.startDate} - {job.endDate}
+              </p>
+            </div>
+            <div class="col-span-full sm:col-span-4">
+              <ul>
+                {job.achievements.map((achievement) => (
+                  <li class="mb-2 flex font-light">
+                    <div class="mr-2">✔️</div>
+                    <div>{achievement}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="education" title="🎓 Education.">
+    <div class="my-10 flex flex-col gap-y-10">
+      {
+        education.map(
+          ({ degree, school, field, startYear, endYear, description, url }) => (
+            <div class="mb-4 flex flex-col gap-y-2">
+              <div class="flex items-center">
+                <Favicon website={url} classes="h-5 w-5 mr-2" />
+                <h4 class="text-xl font-bold md:text-2xl">{school}</h4>
+              </div>
+              <p class="text-lg font-light text-gray-700 md:text-xl">
+                {degree}, {field}
+              </p>
+              <p class="text-base font-light text-gray-700">
+                {`${startYear} - ${endYear || "Present"}`}
+              </p>
+              <p class="text-base font-light text-gray-700">{description}</p>
+            </div>
+          )
+        )
+      }
+    </div>
+  </Section>
+</Layout>
