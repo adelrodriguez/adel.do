@@ -1,0 +1,566 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Adel Rodríguez",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "hello@adelrodriguez.com",
+    "phone": "",
+    "url": "https://adelrodriguez.com",
+    "summary": "I'm a Software Engineer based in Santo Domingo, Dominican Republic. Most of my experience has been on the web, mostly on the Frontend, lately doing Fullstack. I love to learn new technologies and love developing simple and clean solutions to complex problems. I work mostly with Typescript, React and Node.js, although I dabble with Python and Go.",
+    "location": {
+      "countryCode": "DO",
+      "postalCode": "11108",
+      "city": "Santo Domingo"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "adelrodriguez",
+        "url": "https://www.linkedin.com/in/adelrodriguez/"
+      },
+      {
+        "network": "X",
+        "username": "adeldotdo",
+        "url": "https://x.com/adeldotdo"
+      },
+      {
+        "network": "GitHub",
+        "username": "adelrodriguez",
+        "url": "https://github.com/adelrodriguez"
+      },
+      {
+        "network": "Medium",
+        "username": "adelrodriguez",
+        "url": "https://medium.com/@adelrodriguez"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "The Listing",
+      "position": "Technical Co-Founder",
+      "startDate": "2021-07-31",
+      "highlights": [
+        "Service allowing users to create gift registries aggregating products from multiple stores across Santo Domingo.",
+        "Built using Remix as a custom storefront and Shopify to manage the e-commerce backend.",
+        "Created a web scraping service using Playwright to extract product information from dozens of different stores."
+      ],
+      "summary": "Creating a new gift-giving experience in the Dominican Republic. Personalized registry pages for weddings, baby showers, bachelorette parties, birthdays, and more.",
+      "url": "https://www.giftthelisting.com/",
+      "location": "Santo Domingo, Distrito Nacional, Dominican Republic"
+    },
+    {
+      "name": "Tally",
+      "position": "Freelance Software Engineer",
+      "startDate": "2023-08-31",
+      "endDate": "2023-11-30",
+      "highlights": [
+        "Led migration of the company codebases into a monorepo setup using pnpm workspaces and turborepo.",
+        "Shipped long-requested features such as: number formatting for number fields on forms, signature verification and custom HTTP headers on webhooks, discard not published changes, new options for conditional logic.",
+        "Fixed bugs such as performance on submissions view of forms with multiple images."
+      ],
+      "url": "https://www.tally.so"
+    },
+    {
+      "name": "G2i Inc.",
+      "position": "Software Developer",
+      "startDate": "2020-04-30",
+      "endDate": "2023-10-31",
+      "highlights": [
+        "Contract developer focused on developing solutions to complex problems using React, React Native, Node.js, and GraphQL.",
+        "Developed web applications for hosting digital events using React and Firebase under strict deadlines.",
+        "Maintained and improved clients’ codebases across various technologies (Hugo, Grow, Angular as some examples)."
+      ],
+      "summary": "Part of the G2i community. Contract developer focused on developing solutions to complex problems using React, React Native, TypeScript, Node.js and GraphQL.\n\n• Developed web applications using React and Firebase.\n• Performed maintenance work on clients' codebases, made with a variety of technologies such as Hugo, Grow, and Angular.\n• Worked on accessibility refactors for high-traffic websites.",
+      "url": "https://g2i.co/",
+      "location": "Remote"
+    },
+    {
+      "name": "Synthesis",
+      "position": "Software Engineer",
+      "startDate": "2022-01-31",
+      "endDate": "2022-11-30",
+      "url": "https://synthesis.com/",
+      "highlights": [
+        "Shipped features to increase student networking: chat for student cohorts, SMS notifications for classes using Twilio, follow system for students and teachers, and student profiles.",
+        "Rewrote the subscription system, simplifying it and decoupling it from Stripe, solving issues charging customers and helped Operations team solve outstanding year long issues.",
+        "Integrated E2E testing into the CI workflow with Playwright and Docker.",
+        "Optimized CI workflow, reducing test times from 9 to under 4 minutes.",
+        "Contributed to Play, an event-driven system using Apache Kafka and XState.",
+        "Maintained and enhanced the student Portal using Next.js, TypeScript, and TypeORM."
+      ],
+      "summary": ""
+    },
+    {
+      "name": "Nanos - AI Marketing",
+      "position": "Software Engineer",
+      "startDate": "2020-10-31",
+      "endDate": "2022-02-28",
+      "highlights": [
+        "Enhanced the ad creation wizard by encouraging users to rely more on the suggestions provided by the ML algorithm.",
+        "Worked with the Facebook Marketing and Google Ads APIs, initiating the migration from the AdWords API to the new Ads API.",
+        "Collaborated with external partners to transform the product into a whitelabel service, working closely with developers outside the organization to ensure successful implementation.",
+        "Performed extensive refactoring and bug fixing across the company’s legacy codebase, migrating old front-end components to newer React standards."
+      ],
+      "summary": "",
+      "url": "https://nanos.ai/",
+      "location": "Remote"
+    },
+    {
+      "name": "Left Field Labs",
+      "position": "Frontend Developer",
+      "startDate": "2021-04-30",
+      "endDate": "2021-10-31",
+      "highlights": [
+        "Developed web applications and Chrome Extensions using React, Preact, and TypeScript with strict time constraints for time-sensitive digital events.",
+        "Collaborated with product teams to enhance accessibility and localization across client projects."
+      ],
+      "summary": "",
+      "url": "https://www.linkedin.com/company/left-field-labs/",
+      "location": "Remote"
+    },
+    {
+      "name": "Genome Digital",
+      "position": "Front End Engineer",
+      "startDate": "2018-07-31",
+      "endDate": "2020-03-31",
+      "highlights": [
+        "Led teams of 3-4 developers in creating web and mobile applications with React and React Native.",
+        "Implemented technologies to streamline development workflow (Storybook, Apollo GraphQL, TypeScript).",
+        "Maintained and updated legacy applications and codebases."
+      ],
+      "summary": "Developed web and mobile applications using React and React Native.",
+      "url": "https://www.linkedin.com/company/genome-digital/",
+      "location": "Remote"
+    },
+    {
+      "name": "OnClick Studio",
+      "position": "Full Stack Developer",
+      "startDate": "2017-11-30",
+      "endDate": "2018-05-31",
+      "highlights": [
+        "Developed SPAs and APIs for clients' projects using MERN stack.",
+        "Deployed microservices to support the company's main product."
+      ],
+      "url": "https://www.linkedin.com/company/onclick-studio/",
+      "location": "Santo Domingo, Dominican Republic"
+    },
+    {
+      "name": "Ecolab",
+      "position": "Associate Industrial Designer",
+      "startDate": "2016-03-31",
+      "endDate": "2017-03-31",
+      "highlights": [
+        "Designed and prototyped new products for the company's Material Process Delivery department.",
+        "Worked closely with RD&E Product Managers, MPD Project Leaders and Process Engineers to develop tooling for New Product Introductions (NPIs).",
+        "Fulfilled design requirements to support sustaining engineering tasks for seven plants in two facilities (La Romana and Las Americas).",
+        "Supported Process Engineers and Quality Engineers with new tooling designs for Kaizen projects."
+      ],
+      "summary": "Prototype Design Engineering duties  at the Material Process Delivery (MPD) Department, responsible for designing tools (sealing dies, cutting dies, fixtures, templates) for the manufacture of surgical equipment and patient drapes.",
+      "url": "https://www.linkedin.com/company/ecolab/",
+      "location": "La Romana, Dominican Republic"
+    },
+    {
+      "name": "CoworkingDo",
+      "position": "Intern",
+      "startDate": "2014-04-30",
+      "endDate": "2014-12-31",
+      "highlights": [],
+      "summary": "• Assisted with daily tasks, customer support and maintaining the community of the coworking space.\n• Part of the organizing team for Aceleración ALPHA, the first pre-acceleration program for startups in the Dominican Republic.",
+      "url": "https://www.linkedin.com/company/coworkingdo/",
+      "location": "Santo Domingo, Dominican Republic"
+    },
+    {
+      "name": "Instituto Tecnológico de Santo Domingo",
+      "position": "Documentation Specialist",
+      "startDate": "2013-05-31",
+      "endDate": "2013-10-31",
+      "highlights": [],
+      "summary": "• Designed procedures for standardization of core functions within the IT department of the university.",
+      "url": "https://www.linkedin.com/school/instituto-tecnologico-de-santo-domingo/",
+      "location": "Santo Domingo, Dominican Republic"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "G2i Inc.",
+      "position": "Mentor",
+      "startDate": "2023-01-31",
+      "summary": "Providing career development and developer health mentoring for the G2i Mentorship Program.",
+      "highlights": [],
+      "url": "https://www.g2i.co"
+    },
+    {
+      "organization": "Toggl Hire",
+      "position": "Expert",
+      "startDate": "2021-01-31",
+      "endDate": "2022-01-31",
+      "summary": "I'm a certified, paid expert for Toggl Hire, creating questions for technical skills like JavaScript, React, and Git. My questions are used in skills tests taken by thousands of candidates every week. This is my way of helping employers screen candidates based on ability and skill, not resumes.",
+      "highlights": [],
+      "url": "https://toggl.com/hire/"
+    },
+    {
+      "organization": "Global Shapers Community Santo Domingo",
+      "position": "Shaper",
+      "startDate": "2019-03-31",
+      "highlights": ["Tech Champ 2020-2021"],
+      "url": "https://www.globalshapers.org/"
+    },
+    {
+      "organization": "Startup Weekend",
+      "position": "Coach",
+      "startDate": "2019-05-29",
+      "endDate": "2019-05-31",
+      "summary": "Coach for Startup Weekend Fintech Santo Domingo 2019",
+      "highlights": [],
+      "url": "https://www.instagram.com/swsantodomingo/"
+    },
+    {
+      "organization": "Startup Weekend",
+      "position": "Staff",
+      "endDate": "2014-11-30",
+      "startDate": "2024-11-28",
+      "summary": "Staff for Startup Weekend Santo Domingo 2014.",
+      "highlights": [],
+      "url": "https://www.instagram.com/swsantodomingo/"
+    },
+    {
+      "organization": "Civil Innovation Lab",
+      "position": "Volunteer",
+      "startDate": "2013-12-31",
+      "endDate": "2014-08-31",
+      "highlights": []
+    },
+    {
+      "organization": "Ministerio de Industria y Comercio",
+      "position": "Volunteer",
+      "startDate": "2014-11-30",
+      "summary": "Digital Presence Assistant at PYMES Digital.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Iberia",
+      "area": "",
+      "studyType": "High School",
+      "startDate": "2006-12-31",
+      "endDate": "2010-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Instituto Tecnológico de Santo Domingo",
+      "area": "Mechatronic Engineering",
+      "studyType": "Bachelor’s Degree",
+      "startDate": "2010-12-31",
+      "endDate": "2014-12-31",
+      "score": "",
+      "courses": [
+        "ANA-305 - Planes de Negocios Exitosos",
+        "ANA-304 - Introducción al Emprendimiento",
+        "Simposio de Ingeniería Industrial – Value Generation: Estrategias y Métodos Enfocados en la Innovación del Manejo de la Cadena de Valor.",
+        "INI-375 - Innovación en la Creación de Nuevos Negocios"
+      ]
+    },
+    {
+      "institution": "freeCodeCamp",
+      "area": "Computer Software Engineering",
+      "studyType": "Full Stack Web Development Certification",
+      "startDate": "2017-12-31",
+      "endDate": "2020-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Global Entrepreneurship Summer School",
+      "area": "Social Entrepreneurship, Waste",
+      "studyType": "",
+      "startDate": "2014-12-31",
+      "endDate": "2014-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Tecnológico de Monterrey",
+      "area": "Innovation for Business Development",
+      "studyType": "Master’s Degree",
+      "startDate": "2016-12-31",
+      "endDate": "2019-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Third Place Winner",
+      "date": "2016-11-30",
+      "awarder": "Startup Weekend Santo Domingo",
+      "summary": "Theme: \"Improving Lives\". Created a project to shorten the food supply chain and deliver fresh ingredients directly from farmers to client's doorsteps."
+    },
+    {
+      "title": "Complementary Scholarship",
+      "date": "2016-09-30",
+      "awarder": "Asociación EXATEC Dominicana",
+      "summary": ""
+    },
+    {
+      "title": "First Place Winner",
+      "date": "2014-10-31",
+      "awarder": "Startup Weekend Education Santo Domingo",
+      "summary": "Project: Lingo. Lingo is a web platform dedicated to bring speech therapy for children."
+    },
+    {
+      "title": "2nd Place Winner",
+      "date": "2014-01-31",
+      "awarder": "Ministerio de Educación Superior, Ciencia y Tecnología (MESCYT)",
+      "summary": "5th Annual Business Plan Competition. University Division."
+    },
+    {
+      "title": "Young National Talent",
+      "date": "2010-09-30",
+      "awarder": "NTEC Program for Outstanding Students (Programa INTEC con los Estudiantes Sobresalientes) (PIES)",
+      "summary": "Granted a scholarship covering 100% of tuition for undergraduate studies by the AES Dominicana Foundation."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "E-Commerce in the Dominican Republic",
+      "issuer": "Information Providers, SLR",
+      "startDate": "2014-07-31"
+    },
+    {
+      "name": "Taller de Sistemas de Apoyo a la Microempresa / Nex Links",
+      "issuer": "Golda Meir Mount Carmel International Training Center",
+      "startDate": "2014-06-30"
+    },
+    {
+      "name": "Certified SolidWorks Associate",
+      "issuer": "Dassault Systèmes SolidWorks Corp.",
+      "startDate": "2012-11-30"
+    },
+    {
+      "name": "The Web Developer Bootcamp",
+      "issuer": "Udemy",
+      "startDate": "2017-07-31",
+      "url": "https://www.udemy.com/certificate/UC-7SXT59YU/"
+    },
+    {
+      "name": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "startDate": "2018-07-31",
+      "url": "https://www.freecodecamp.org/certification/adelrodriguez/javascript-algorithms-and-data-structures"
+    },
+    {
+      "name": "Triplebyte Certified Front End Engineer",
+      "issuer": "Triplebyte",
+      "startDate": "2020-08-31",
+      "url": "https://triplebyte.com/tb/adel-rodriguez-njbwdol/certificate/track/frontend"
+    },
+    {
+      "name": "The Modern Python 3 Bootcamp",
+      "issuer": "Udemy",
+      "startDate": "2020-09-30",
+      "url": "https://www.udemy.com/certificate/UC-e217eee6-4227-4e17-9bc5-6db5c1875d15/"
+    },
+    {
+      "name": "The Complete Developers Guide to MongoDB",
+      "issuer": "Udemy",
+      "startDate": "2020-11-30",
+      "url": "https://www.udemy.com/certificate/UC-c72049eb-d93e-4858-bf2c-052be85c3897/"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Artificial Intelligence (AI)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Ads",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Facebook API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Facebook Ads",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Single Page Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Thinking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Rapid Prototyping",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React Native",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeORM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Electronics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Industrial Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Postgres",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Remix",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Prisma",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Entrepreneurship",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SolidWorks",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Playwright",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience (UX)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Programming Interfaces",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "3D Printing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CAD",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Spanish"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Wordbrush",
+      "startDate": "2024-02-28",
+      "summary": "Elevate your content with stunning visuals created directly from your writing. Create beautiful images for your blog, social media, or novel in seconds, using AI.",
+      "url": "https://wordbrush.com"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

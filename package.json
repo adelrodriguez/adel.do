@@ -1,5 +1,5 @@
 {
-  "name": "adelrodriguez",
+  "name": "adel.do",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "resume:create": "resume init",
+    "resume:validate": "resume validate -r"
   },
   "dependencies": {
     "@astrojs/tailwind": "5.1.0",
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "latest"
+    "prettier-plugin-tailwindcss": "latest",
+    "resume-cli": "3.0.8"
   }
 }
