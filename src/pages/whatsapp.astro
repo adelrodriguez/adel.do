@@ -1,0 +1,189 @@
+---
+import Layout from "@/layouts/Layout.astro"
+---
+
+<Layout
+  title="sendawhats.app | adel.do"
+  description="Send a WhatsApp message to anyone without saving their phone number or contact information."
+  hasFooter
+>
+  <div class="relative flex items-center h-full px-6 lg:px-8 py-16">
+    <div class="mx-auto max-w-3xl items-center z-10">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+        Send
+        <span
+          class="bg-gradient-to-r from-emerald-500 to-green-900 text-transparent bg-clip-text"
+          >WhatsApp Messages</span
+        >
+        Without the Hassle
+      </h1>
+      <p class="pt-6 text-lg leading-8 text-gray-600 sm:text-center">
+        Are you tired of manually adding contacts to your phone before sending a
+        WhatsApp message? Just add the phone number below, and a WhatsApp
+        conversation will be started with the person without having to save
+        their phone number contact information.
+      </p>
+
+      <form class="flex flex-col sm:flex-row gap-4 pt-2">
+        <div class="flex-1">
+          <div class="relative rounded-md shadow-sm h-full">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="country" class="sr-only">Country</label>
+              <select
+                id="country"
+                name="country"
+                autocomplete="tel-country-code"
+                class="h-full rounded-md border-transparent bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm"
+              >
+                <option value="">No Code</option>
+              </select>
+            </div>
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              class="block h-full w-full rounded-md border-gray-300 pl-40 sm:pl-36 focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm"
+              placeholder="(555) 123-4567"
+              autocomplete="tel-national"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="inline-flex justify-center items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+        >
+          Send a message 🚀
+        </button>
+      </form>
+      <p class="pt-2 text-sm text-gray-500" id="email-description">
+        You can choose a country code from the list. If you don't find yours,
+        you can leave it blank.
+      </p>
+
+      <p class="pt-6 text-lg leading-8 text-gray-600 sm:text-center">
+        <strong>Tip: </strong>You can send WhatsApp messages to yourself! Just
+        <strong>write your own phone number</strong>
+        and a conversation will be opened with yourself, and you'll be able to use
+        it to write notes, reminders, and more.
+      </p>
+    </div>
+    <div class="isolate bg-white">
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+      >
+        <svg
+          class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 678"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+            fill-opacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+          ></path>
+          <defs>
+            <linearGradient
+              id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+              x1="1155.49"
+              x2="-78.208"
+              y1=".177"
+              y2="474.645"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#45c656"></stop>
+              <stop offset="1" stop-color="#128c7e"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-10 -z-10 transform-gpu overflow-hidden blur-3xl"
+    >
+      <svg
+        class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+        viewBox="0 0 1155 678"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+          fill-opacity=".3"
+          d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+        ></path>
+        <defs>
+          <linearGradient
+            id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+            x1="1155.49"
+            x2="-78.208"
+            y1=".177"
+            y2="474.645"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#45c656"></stop>
+            <stop offset="1" stop-color="#128c7e"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import timezones from "@/data/timezones.json"
+  import countries from "@/data/countries.json"
+
+  const form = document.querySelector("form") as HTMLFormElement
+  const select = document.querySelector("select") as HTMLSelectElement
+  const input = document.querySelector(
+    '[name="phone-number"',
+  ) as HTMLInputElement
+
+  function setCountryCodeByTimezone() {
+    try {
+      const timezone = Intl.DateTimeFormat().resolvedOptions()
+        .timeZone as keyof typeof timezones
+
+      if (!timezone) return
+
+      if (timezones[timezone] === undefined) return
+
+      const countryCode = timezones[timezone].c[0]
+
+      for (let option of select!.options) {
+        if (option.getAttribute("data-country-code") === countryCode) {
+          option.selected = true
+          break
+        }
+      }
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  countries.sort().forEach((country) => {
+    const option = document.createElement("option")
+    option.value = country.dial_code
+
+    option.textContent = `${country.flag} ${country.code} (${country.dial_code})`
+    option.setAttribute("data-country-code", country.code)
+    option.setAttribute("data-country-name", country.name)
+    option.setAttribute("data-country-dial-code", country.dial_code)
+    option.setAttribute("data-country-flag", country.flag)
+
+    select.appendChild(option)
+  })
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    // Replaces ( ) - and spaces with empty string
+    const phoneNumber = `${input.value}`.replace(/\(|\)|\-| /g, "")
+    const countryCode = select.value
+
+    window.location.assign(`https://wa.me/${countryCode + phoneNumber}`)
+  })
+
+  setCountryCodeByTimezone()
+</script>

@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets'
+
 interface Props {
   website: string
   classes?: string
@@ -11,9 +13,11 @@ const url = website
   .replace(/\/$/, "") // Remove trailing backslash
 ---
 
-<img
+<Image
   src={`https://icons.duckduckgo.com/ip3/${url}.ico`}
   alt=""
   role="presentation"
   class={classes}
+  height={20}
+  width={20}
 />

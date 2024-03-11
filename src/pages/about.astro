@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets"
+import GoBack from "@/components/GoBack.astro"
+import Layout from "@/layouts/Layout.astro"
+import me from "@/assets/adel.jpg"
+---
+
+<Layout title="About me | adel.do" hasFooter>
+  <section class="flex items-center relative">
+    <div class="h-full w-full">
+      <h2 class="mb-8 text-3xl font-bold md:text-4xl">👨🏻‍💻 About me.</h2>
+      <div class="my-4 flex flex-col-reverse items-center sm:my-20 md:flex-row">
+        <p
+          class="text-lg font-light leading-relaxed md:mr-10 md:text-xl md:leading-loose"
+        >
+          I'm a software engineer based in Santo Domingo, Dominican Republic.
+          Most of my experience has been on the web, mostly on the frontend,
+          lately doing fullstack. I love to learn new technologies and love
+          developing simple and clean solutions to complex problems. Less is
+          always more.
+        </p>
+        <div
+          class="relative mb-10 aspect-[9/10] w-64 flex-none rotate-2 overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:rotate-0 hover:scale-110 sm:w-72 sm:rounded-2xl md:m-0"
+        >
+          <Image
+            src={me}
+            alt="Adel"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      </div>
+      <GoBack />
+    </div>
+  </section>
+</Layout>

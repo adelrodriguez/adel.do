@@ -1,0 +1,53 @@
+---
+import GoBack from "@/components/GoBack.astro"
+import Layout from "@/layouts/Layout.astro"
+
+const tech = [
+  "Astro",
+  "Docker",
+  "Drizzle",
+  "Express",
+  "GraphQL",
+  "Hono",
+  "JavaScript",
+  "MariaDB",
+  "MongoDB",
+  "MySQL",
+  "Next.js",
+  "Node.js",
+  "Postgres",
+  "Preact",
+  "Prisma",
+  "Python",
+  "React",
+  "Redis",
+  "Remix",
+  "Tailwind",
+  "TypeORM",
+  "TypeScript",
+  "Vite",
+]
+---
+
+<Layout title="Tech | adel.do" hasFooter>
+  <section class="flex items-center">
+    <div class="relative h-full w-full">
+      <h2 class="mb-8 text-3xl font-bold md:text-4xl">💻 Tech.</h2>
+      <p class="text-lg font-light md:text-xl">
+        Some of the technologies I work with:
+      </p>
+      <ul
+        class="py-16 md:text-center gap-4 flex flex-wrap items-center justify-center"
+      >
+        {
+          tech.map((t) => (
+            <li class="inline-block cursor-default px-5 py-2 transition-all duration-200 hover:rounded-full hover:bg-gray-800 hover:text-white sm:text-lg">
+              {t}
+            </li>
+          ))
+        }
+      </ul>
+      <GoBack />
+    </div>
+  </section>
+</Layout>
