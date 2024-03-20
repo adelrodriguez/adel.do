@@ -1,59 +1,59 @@
 ---
-import Layout from "@/layouts/Layout.astro"
-import Typing from "@/components/Typing.astro"
+import Layout from '@/layouts/Layout.astro'
+import Typing from '@/components/Typing.astro'
 
-import tech from "@/content/resume/tech.json"
-import jobs from "@/content/resume/jobs.json"
-import education from "@/content/resume/education.json"
+import tech from '@/content/resume/tech.json'
+import jobs from '@/content/resume/jobs.json'
+import education from '@/content/resume/education.json'
 
-import Favicon from "@/components/Favicon.astro"
-import Section from "@/components/Section.astro"
-import NavLink from "@/components/NavLink.astro"
+import Favicon from '@/components/Favicon.astro'
+import Section from '@/components/Section.astro'
+import NavLink from '@/components/NavLink.astro'
 
 const intro = [
-  "a Software Engineer.",
-  "a Full Stack Developer.",
-  "a problem solver.",
-  "an awesome teammate.",
-  "constantly learning.",
-  "happy to meet you!",
+  'a Software Engineer.',
+  'a Full Stack Developer.',
+  'a problem solver.',
+  'an awesome teammate.',
+  'constantly learning.',
+  'happy to meet you!',
 ]
 
 const links = [
   {
-    name: "about",
-    url: "/about",
+    name: 'about',
+    url: '/about',
   },
   {
-    name: "tech",
-    url: "/tech",
+    name: 'tech',
+    url: '/tech',
   },
   {
-    name: "resume",
-    url: "#",
+    name: 'resume',
+    url: '#',
   },
   {
-    name: "blog",
-    url: "https://blog.adelrodriguez.com",
+    name: 'blog',
+    url: 'https://blog.adel.do',
     external: true,
   },
   {
-    name: "contact",
-    url: "mailto:hello@adelrodriguez.com",
+    name: 'contact',
+    url: 'mailto:hello@adelrodriguez.com',
   },
   {
-    name: "github",
-    url: "https://www.github.com/adelrodriguez",
+    name: 'github',
+    url: 'https://www.github.com/adelrodriguez',
     external: true,
   },
   {
-    name: "x",
-    url: "https://twitter.com/adeldotdo",
+    name: 'x',
+    url: 'https://twitter.com/adeldotdo',
     external: true,
   },
   {
-    name: "linkedin",
-    url: "https://www.linkedin.com/in/adelrodriguez/",
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/adelrodriguez/',
     external: true,
   },
 ]
@@ -63,7 +63,7 @@ const links = [
   <section class="flex min-h-screen items-center w-full">
     <div class="select-none font-bold">
       <div class="mb-5 text-3xl md:text-5xl">
-        {"<🧔🏻‍♂️/>"}
+        {'<🧔🏻‍♂️/>'}
       </div>
       <div class="mb-4 text-4xl tracking-tight md:text-6xl">
         <h1 class="leading-normal md:leading-normal">Hello, I'm Adel!</h1>
@@ -78,11 +78,7 @@ const links = [
         {
           links.map((link) => (
             <div class="group mb-2 mr-5 inline-block">
-              <NavLink
-                name={link.name}
-                url={link.url}
-                external={link.external}
-              />
+              <NavLink name={link.name} url={link.url} external={link.external} />
             </div>
           ))
         }
