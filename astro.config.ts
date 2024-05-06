@@ -9,4 +9,7 @@ export default defineConfig({
   integrations: [tailwind()],
   output: "server",
   adapter: vercel(),
+  redirects: {
+    '/whatsapp': '/projects/sendawhats.app'
+  }
 })
